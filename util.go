@@ -122,9 +122,9 @@ func (d Direction) CoordInDirection(coord Coordinate) Coordinate {
 	}
 }
 
-func (m Map) GetSnakeById(snake_id string) *SnakeInfo {
+func (m Map) GetSnakeById(snakeID string) *SnakeInfo {
 	for _, snake := range m.SnakeInfos {
-		if snake.Id == snake_id {
+		if snake.Id == snakeID {
 			return &snake
 		}
 	}
